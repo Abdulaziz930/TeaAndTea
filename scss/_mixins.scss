@@ -1,0 +1,43 @@
+@mixin text($f-size, $f-weight, $color) {
+  font-size: $f-size;
+  font-weight: $f-weight;
+  color: $color;
+}
+
+@mixin flexy-box() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin badge($bg-color, $content, $r-position) {
+  content: $content;
+  position: absolute;
+  background-color: $bg-color;
+  border-radius: 3px;
+  padding: 2px 8px;
+  right: $r-position;
+  top: 50px;
+  @include text(10px, 400, $primary-color);
+}
+
+@mixin colorBox($bg-color) {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #787878;
+  font-size: 0;
+  cursor: pointer;
+  margin-right: 10px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: $bg-color;
+    border-radius: 50%;
+    top: 1.5px;
+    left: 1.5px;
+  }
+}
