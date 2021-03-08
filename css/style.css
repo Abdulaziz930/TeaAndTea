@@ -1,8 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
+  height: 3000px;
 }
 
 nav {
+  background-color: #fff;
+  z-index: 11;
   position: relative;
   margin-top: 10px;
 }
@@ -46,9 +53,17 @@ nav .slide-item .iconBox .currency {
 }
 
 nav .nav-bottom-item {
-  margin-top: 10px;
-  padding: 10px 30px;
+  background-color: #fff;
+  padding: 20px 30px;
   display: flex;
+}
+
+nav .nav-bottom-item .left-responsive-icons {
+  display: none;
+}
+
+nav .nav-bottom-item .right-responsive-icons {
+  display: none;
 }
 
 nav .nav-bottom-item .logoBox img {
@@ -108,6 +123,20 @@ nav .nav-bottom-item .menuItems .left-list-items .first-badge::before {
   color: #fff;
 }
 
+nav .nav-bottom-item .menuItems .left-list-items .first-badge-1::before {
+  content: "Sale";
+  position: absolute;
+  background-color: #dc3545;
+  border-radius: 3px;
+  padding: 2px 8px;
+  right: 64.6%;
+  top: 50px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #fff;
+  top: 10px;
+}
+
 nav .nav-bottom-item .menuItems .left-list-items .second-badge::before {
   content: "Hot";
   position: absolute;
@@ -119,6 +148,20 @@ nav .nav-bottom-item .menuItems .left-list-items .second-badge::before {
   font-size: 10px;
   font-weight: 400;
   color: #fff;
+}
+
+nav .nav-bottom-item .menuItems .left-list-items .second-badge-1::before {
+  content: "Hot";
+  position: absolute;
+  background-color: #f3bc48;
+  border-radius: 3px;
+  padding: 2px 8px;
+  right: 58.6%;
+  top: 50px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #fff;
+  top: 10px;
 }
 
 nav .nav-bottom-item .menuItems .left-list-items .last-list-item {
@@ -136,6 +179,20 @@ nav .nav-bottom-item .menuItems .left-list-items .last-list-item::before {
   font-size: 10px;
   font-weight: 400;
   color: #fff;
+}
+
+nav .nav-bottom-item .menuItems .left-list-items .last-list-item-1::before {
+  content: "New";
+  position: absolute;
+  background-color: #1dbdb8;
+  border-radius: 3px;
+  padding: 2px 8px;
+  right: 51.5%;
+  top: 50px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #fff;
+  top: 10px;
 }
 
 nav .nav-bottom-item .menuItems .left-list-items .arrow {
@@ -473,6 +530,7 @@ nav .nav-bottom-item .right-side .right-list-items li a .fa-times {
 }
 
 nav .nav-bottom-item .right-side .right-list-items li .my-dropdown {
+  z-index: 10;
   position: absolute;
   top: 91%;
   left: 0;
@@ -766,4 +824,97 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   color: #fff;
   font-size: 17px;
   font-family: "Poppins", sans-serif;
+}
+
+#intro .carousel:hover .slider-icon {
+  opacity: 1;
+}
+
+#intro .slider-icon {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 1024px) {
+  nav .slide-item .iconBox {
+    display: none;
+  }
+  nav .nav-bottom-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .nav-bottom-item a:hover {
+    text-decoration: none;
+  }
+  nav .nav-bottom-item .left-responsive-icons {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+  }
+  nav .nav-bottom-item .left-responsive-icons i {
+    color: #000;
+    font-size: 25px;
+    padding-right: 20px;
+  }
+  nav .nav-bottom-item .right-responsive-icons {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+  }
+  nav .nav-bottom-item .right-responsive-icons i {
+    color: #000;
+    font-size: 25px;
+    padding-left: 20px;
+  }
+  nav .nav-bottom-item .logoBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .nav-bottom-item .left-side {
+    background-color: #fff;
+    padding: 20px 0;
+    width: 0;
+    opacity: 0;
+  }
+  nav .nav-bottom-item .menuItems .left-list-items {
+    padding: 0;
+    flex-direction: column;
+  }
+  nav .nav-bottom-item .menuItems .left-list-items .arrow {
+    display: none;
+  }
+  nav .nav-bottom-item .menuItems .left-list-items .my-dropdown {
+    display: none;
+  }
+  nav .nav-bottom-item .menuItems .left-list-items li {
+    padding: 10px 0;
+  }
+  nav .nav-bottom-item .menuItems .left-list-items li:last-child {
+    padding: 10px 0;
+  }
+  nav .nav-bottom-item .menuItems .left-list-items .last-list-item {
+    border-right: none;
+  }
+  nav .nav-bottom-item .menuItems .right-list-items {
+    display: none;
+  }
+  nav .nav-bottom-item .my-badge::before {
+    display: none;
+  }
+  nav .nav-bottom-item .right-side .iconBox {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  nav .slide-item {
+    display: none;
+  }
+  nav .nav-bottom-item .left-responsive-icons {
+    display: flex;
+  }
+  nav .nav-bottom-item .right-responsive-icons {
+    display: flex;
+  }
 }

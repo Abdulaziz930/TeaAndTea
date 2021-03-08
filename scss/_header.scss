@@ -1,18 +1,6 @@
-// header {
-//   display: flex;
-// }
-// .side-bar {
-//   width: 0px;
-//   height: 600px;
-//   background-color: cadetblue;
-// }
-// i {
-//   font-size: 25px;
-//   margin-top: 10px;
-//   margin-left: 10px;
-//   cursor: pointer;
-// }
 nav {
+  background-color: $primary-color;
+  z-index: 11;
   position: relative;
   margin-top: 10px;
   .slide-item {
@@ -42,8 +30,14 @@ nav {
     }
   }
   .nav-bottom-item {
-    margin-top: 10px;
-    padding: 10px 30px;
+    background-color: #fff;
+    .left-responsive-icons {
+      display: none;
+    }
+    .right-responsive-icons {
+      display: none;
+    }
+    padding: 20px 30px;
     display: flex;
     .logoBox {
       img {
@@ -83,15 +77,33 @@ nav {
             @include badge($danger-color, "Sale", 64.6%);
           }
         }
+        .first-badge-1 {
+          &::before {
+            @include badge($danger-color, "Sale", 64.6%);
+            top: 10px;
+          }
+        }
         .second-badge {
           &::before {
             @include badge($warning-color, "Hot", 58.6%);
+          }
+        }
+        .second-badge-1 {
+          &::before {
+            @include badge($warning-color, "Hot", 58.6%);
+            top: 10px;
           }
         }
         .last-list-item {
           border-right: 3px solid $text-color;
           &::before {
             @include badge($info-color, "New", 51.5%);
+          }
+        }
+        .last-list-item-1 {
+          &::before {
+            @include badge($info-color, "New", 51.5%);
+            top: 10px;
           }
         }
         .arrow {
@@ -373,6 +385,7 @@ nav {
             font-size: 20px;
           }
           .my-dropdown {
+            z-index: 10;
             position: absolute;
             top: 91%;
             left: 0;

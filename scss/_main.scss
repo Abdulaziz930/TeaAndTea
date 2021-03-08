@@ -1,0 +1,13 @@
+#intro {
+  .carousel {
+    &:hover {
+      .slider-icon {
+        opacity: 1;
+      }
+    }
+  }
+  .slider-icon {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+}
