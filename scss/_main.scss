@@ -112,3 +112,57 @@
     top: 30%;
   }
 }
+#most-popular {
+  .section-heading {
+    text-align: center;
+    h2 {
+      @include text(30px, 500, $text-color);
+    }
+    p {
+      margin-top: 20px;
+      @include text(12px, 400, $secondary-color);
+    }
+  }
+  .linkBox {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -42px;
+    a {
+      text-decoration: underline;
+      text-underline-position: under;
+      @include text(12px, 400, $link-color);
+    }
+  }
+  .section-content {
+    overflow-x: auto;
+    display: flex;
+    .imgBox {
+      cursor: pointer;
+      img {
+        width: 100%;
+      }
+    }
+    .content-description {
+      padding: 35px 0 0 60px;
+      h3 {
+        @include text(24px, 600, $text-color);
+        margin-bottom: 20px;
+      }
+      p {
+        @include text(12px, 400, $secondary-color);
+        margin-bottom: 30px;
+      }
+      .btnBox {
+        .btn {
+          @include text(14px, 600, $text-color);
+          @include btn(0 35px, $primary-color, $text-color);
+          line-height: 42px;
+          &:hover {
+            @include btnHover($primary-color);
+          }
+        }
+      }
+    }
+  }
+}
