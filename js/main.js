@@ -47,11 +47,9 @@ barIcon.addEventListener("click", function () {
   hamburgerMenu.style.transition = "all 0.5s";
   if (hamburgerMenu.classList.contains("active")) {
     hamburgerMenu.classList.remove("active");
-    hamburgerMenu.style.width = "0px";
-    hamburgerMenu.style.opacity = "0";
+    hamburgerMenu.style.display = "none";
   } else {
     hamburgerMenu.classList.add("active");
-    hamburgerMenu.style.width = "140px";
-    hamburgerMenu.style.opacity = "1";
+    hamburgerMenu.style.display = "block";
   }
 });

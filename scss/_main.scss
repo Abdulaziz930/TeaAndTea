@@ -1,6 +1,9 @@
 #intro {
   .carousel {
     cursor: pointer;
+    .mb-img {
+      display: none;
+    }
     &:hover {
       .slider-icon {
         opacity: 1;
@@ -29,6 +32,9 @@
           }
         }
       }
+    }
+    .first-carousel {
+      text-align: left;
     }
     .second-carousel {
       margin-bottom: 100px;

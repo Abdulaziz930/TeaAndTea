@@ -41,8 +41,8 @@
       .left-side {
         background-color: #fff;
         padding: 20px 0;
-        width: 0;
-        opacity: 0;
+        display: none;
+        opacity: 1;
       }
       .menuItems {
         .left-list-items {
@@ -93,6 +93,40 @@
       }
       .right-responsive-icons {
         display: flex;
+      }
+    }
+  }
+  #intro {
+    .carousel {
+      .ds-img {
+        display: none;
+      }
+      .mb-img {
+        display: block;
+      }
+      .first-carousel {
+        h2 {
+          font-size: 19px;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+        .btnBox {
+          text-align: center;
+        }
+      }
+      .second-carousel {
+        margin-bottom: 50px;
+        h2 {
+          font-size: 19px;
+        }
+      }
+      .last-carousel {
+        margin-bottom: 50px;
+        h2 {
+          font-size: 19px;
+        }
       }
     }
   }

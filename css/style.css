@@ -831,6 +831,10 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   cursor: pointer;
 }
 
+#intro .carousel .mb-img {
+  display: none;
+}
+
 #intro .carousel:hover .slider-icon {
   opacity: 1;
 }
@@ -872,6 +876,10 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
 #intro .carousel .carousel-caption .btnBox .btn:hover {
   background-color: #fff;
   color: #000;
+}
+
+#intro .carousel .first-carousel {
+  text-align: left;
 }
 
 #intro .carousel .second-carousel {
@@ -954,8 +962,8 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   nav .nav-bottom-item .left-side {
     background-color: #fff;
     padding: 20px 0;
-    width: 0;
-    opacity: 0;
+    display: none;
+    opacity: 1;
   }
   nav .nav-bottom-item .menuItems .left-list-items {
     padding: 0;
@@ -996,5 +1004,33 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   }
   nav .nav-bottom-item .right-responsive-icons {
     display: flex;
+  }
+  #intro .carousel .ds-img {
+    display: none;
+  }
+  #intro .carousel .mb-img {
+    display: block;
+  }
+  #intro .carousel .first-carousel h2 {
+    font-size: 19px;
+    text-align: center;
+  }
+  #intro .carousel .first-carousel p {
+    text-align: center;
+  }
+  #intro .carousel .first-carousel .btnBox {
+    text-align: center;
+  }
+  #intro .carousel .second-carousel {
+    margin-bottom: 50px;
+  }
+  #intro .carousel .second-carousel h2 {
+    font-size: 19px;
+  }
+  #intro .carousel .last-carousel {
+    margin-bottom: 50px;
+  }
+  #intro .carousel .last-carousel h2 {
+    font-size: 19px;
   }
 }
