@@ -9,6 +9,8 @@ let navbar = document.querySelector(".nav-bottom-item");
 let firstBadge = document.querySelector(".first-badge");
 let secondBadge = document.querySelector(".second-badge");
 let lastBadge = document.querySelector(".last-list-item");
+const nextIcon = '<i class="fas fa-chevron-right"></i>';
+const prevIcon = '<i class="fas fa-chevron-left"></i>';
 
 window.addEventListener("scroll", function () {
   navbar.style.transition = "all 0.5s";
@@ -52,4 +54,22 @@ barIcon.addEventListener("click", function () {
     hamburgerMenu.classList.add("active");
     hamburgerMenu.style.display = "block";
   }
+});
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    items: 2,
+    margin: 30,
+    loop: true,
+    nav: true,
+    navText: [prevIcon, nextIcon],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      1000: {
+        items: 2,
+      },
+    },
+  });
 });

@@ -109,6 +109,15 @@
       }
     }
   }
+  #new-arrivals {
+    .owl-nav {
+      display: none;
+    }
+    .overlay-content {
+      top: -400px;
+      padding-left: 15px;
+    }
+  }
 }
 @media screen and(max-width:768px) {
   #intro {
@@ -138,6 +147,15 @@
           font-size: 30px;
         }
       }
+    }
+  }
+  #new-arrivals {
+    .owl-nav {
+      display: none;
+    }
+    .overlay-content {
+      top: -580px;
+      padding-left: 15px;
     }
   }
 }
@@ -187,6 +205,15 @@
           font-size: 19px;
         }
       }
+    }
+  }
+  #new-arrivals {
+    .owl-nav {
+      display: none;
+    }
+    .overlay-content {
+      top: -300px;
+      padding-left: 15px;
     }
   }
 }

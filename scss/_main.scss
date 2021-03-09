@@ -64,3 +64,51 @@
     transition: all 0.5s;
   }
 }
+#new-arrivals {
+  .section-heading {
+    padding-top: 80px;
+    margin-bottom: 25px;
+    text-align: center;
+    h2 {
+      @include text(30px, 500, $text-color);
+    }
+  }
+  .overlay-content {
+    position: relative;
+    top: -440px;
+    padding: 50px 20px 0 70px;
+    h3 {
+      @include text(20px, 600, $primary-color);
+      margin-bottom: 20px;
+    }
+    p {
+      @include text(14px, 500, $primary-color);
+      margin-bottom: 35px;
+    }
+    .btnBox {
+      .btn {
+        @include text(14px, 600, $text-color);
+        @include btn(0 35px, $primary-color, $primary-color);
+        line-height: 42px;
+        &:hover {
+          @include btnHover($primary-color);
+        }
+      }
+    }
+  }
+  .owl-item {
+    cursor: pointer;
+  }
+  .owl-prev {
+    position: absolute;
+    left: -100px;
+    font-size: 60px;
+    top: 30%;
+  }
+  .owl-next {
+    position: absolute;
+    right: -100px;
+    font-size: 60px;
+    top: 30%;
+  }
+}

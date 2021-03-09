@@ -923,6 +923,74 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   transition: all 0.5s;
 }
 
+#new-arrivals .section-heading {
+  padding-top: 80px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#new-arrivals .section-heading h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+}
+
+#new-arrivals .overlay-content {
+  position: relative;
+  top: -440px;
+  padding: 50px 20px 0 70px;
+}
+
+#new-arrivals .overlay-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#new-arrivals .overlay-content p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+#new-arrivals .overlay-content .btnBox .btn {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  padding: 0 35px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  border-radius: 0;
+  line-height: 42px;
+}
+
+#new-arrivals .overlay-content .btnBox .btn:hover {
+  background-color: #17a8a3;
+  border-color: #17a8a3;
+  color: #fff;
+}
+
+#new-arrivals .owl-item {
+  cursor: pointer;
+}
+
+#new-arrivals .owl-prev {
+  position: absolute;
+  left: -100px;
+  font-size: 60px;
+  top: 30%;
+}
+
+#new-arrivals .owl-next {
+  position: absolute;
+  right: -100px;
+  font-size: 60px;
+  top: 30%;
+}
+
 @media screen and (max-width: 1024px) {
   nav .slide-item .iconBox {
     display: none;
@@ -1015,6 +1083,13 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   #intro .carousel .last-carousel h2 {
     font-size: 36px;
   }
+  #new-arrivals .owl-nav {
+    display: none;
+  }
+  #new-arrivals .overlay-content {
+    top: -400px;
+    padding-left: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1042,6 +1117,13 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   }
   #intro .carousel .last-carousel h2 {
     font-size: 30px;
+  }
+  #new-arrivals .owl-nav {
+    display: none;
+  }
+  #new-arrivals .overlay-content {
+    top: -580px;
+    padding-left: 15px;
   }
 }
 
@@ -1082,5 +1164,12 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   }
   #intro .carousel .last-carousel h2 {
     font-size: 19px;
+  }
+  #new-arrivals .owl-nav {
+    display: none;
+  }
+  #new-arrivals .overlay-content {
+    top: -300px;
+    padding-left: 15px;
   }
 }
