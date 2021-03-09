@@ -41,3 +41,30 @@
     left: 1.5px;
   }
 }
+
+@mixin btn($padding, $bg-color, $border) {
+  padding: $padding;
+  background-color: $bg-color;
+  @if ($border == none) {
+    border: none;
+  } @else {
+    border: 2px solid $border;
+  }
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+@mixin btnHover($bg-color) {
+  @if ($bg-color == transparent) {
+    background-color: $primary-color;
+    color: $text-color;
+  } @else if($bg-color == $primary-color) {
+    background-color: $link-color;
+    border-color: $link-color;
+    color: $primary-color;
+  } @else if($bg-color == $link-color) {
+    background-color: $hovered-link-color;
+    border-color: $hovered-link-color;
+    color: $primary-color;
+  }
+}

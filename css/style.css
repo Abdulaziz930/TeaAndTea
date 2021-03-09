@@ -540,6 +540,7 @@ nav .nav-bottom-item .right-side .right-list-items li .my-dropdown {
   transform: translateY(10px);
   display: none;
   background-color: #fff;
+  padding-bottom: 30px;
 }
 
 nav .nav-bottom-item .right-side .right-list-items li .my-dropdown .arrow {
@@ -826,8 +827,87 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   font-family: "Poppins", sans-serif;
 }
 
+#intro .carousel {
+  cursor: pointer;
+}
+
 #intro .carousel:hover .slider-icon {
   opacity: 1;
+}
+
+#intro .carousel .carousel-caption {
+  margin-bottom: 5%;
+}
+
+#intro .carousel .carousel-caption h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#intro .carousel .carousel-caption h5 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+#intro .carousel .carousel-caption p {
+  margin-bottom: 35px;
+}
+
+#intro .carousel .carousel-caption .btnBox .btn {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 0 50px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  border-radius: 0;
+  line-height: 42px;
+}
+
+#intro .carousel .carousel-caption .btnBox .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#intro .carousel .second-carousel {
+  margin-bottom: 100px;
+}
+
+#intro .carousel .second-carousel .btnBox .btn {
+  padding: 0 50px;
+  background-color: #17a8a3;
+  border: 2px solid #17a8a3;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+#intro .carousel .second-carousel .btnBox .btn:hover {
+  background-color: #117b77;
+  border-color: #117b77;
+  color: #fff;
+}
+
+#intro .carousel .last-carousel {
+  margin-bottom: 150px;
+}
+
+#intro .carousel .last-carousel .btnBox .btn {
+  padding: 0 50px;
+  background-color: #17a8a3;
+  border: 2px solid #17a8a3;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+#intro .carousel .last-carousel .btnBox .btn:hover {
+  background-color: #117b77;
+  border-color: #117b77;
+  color: #fff;
 }
 
 #intro .slider-icon {

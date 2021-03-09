@@ -1,8 +1,55 @@
 #intro {
   .carousel {
+    cursor: pointer;
     &:hover {
       .slider-icon {
         opacity: 1;
+      }
+    }
+    .carousel-caption {
+      margin-bottom: 5%;
+      h2 {
+        @include text(48px, 700, $primary-color);
+        margin-bottom: 20px;
+      }
+      h5 {
+        @include text(14px, 700, $primary-color);
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 35px;
+      }
+      .btnBox {
+        .btn {
+          @include text(14px, 600, $primary-color);
+          @include btn(0 50px, transparent, $primary-color);
+          line-height: 42px;
+          &:hover {
+            @include btnHover(transparent);
+          }
+        }
+      }
+    }
+    .second-carousel {
+      margin-bottom: 100px;
+      .btnBox {
+        .btn {
+          @include btn(0 50px, $link-color, $link-color);
+          &:hover {
+            @include btnHover($link-color);
+          }
+        }
+      }
+    }
+    .last-carousel {
+      margin-bottom: 150px;
+      .btnBox {
+        .btn {
+          @include btn(0 50px, $link-color, $link-color);
+          &:hover {
+            @include btnHover($link-color);
+          }
+        }
       }
     }
   }
