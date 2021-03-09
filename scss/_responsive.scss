@@ -81,6 +81,65 @@
       }
     }
   }
+  #intro {
+    .carousel {
+      .first-carousel {
+        h2 {
+          font-size: 36px;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+        .btnBox {
+          text-align: center;
+        }
+      }
+      .second-carousel {
+        margin-bottom: 50px;
+        h2 {
+          font-size: 36px;
+        }
+      }
+      .last-carousel {
+        margin-bottom: 50px;
+        h2 {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width:768px) {
+  #intro {
+    .carousel {
+      .first-carousel {
+        margin-bottom: 20px;
+        h2 {
+          font-size: 30px;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+        .btnBox {
+          text-align: center;
+        }
+      }
+      .second-carousel {
+        margin-bottom: 20px;
+        h2 {
+          font-size: 30px;
+        }
+      }
+      .last-carousel {
+        margin-bottom: 20px;
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
 }
 @media screen and(max-width:578px) {
   nav {

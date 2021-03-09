@@ -993,6 +993,56 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   nav .nav-bottom-item .right-side .iconBox {
     display: none;
   }
+  #intro .carousel .first-carousel h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  #intro .carousel .first-carousel p {
+    text-align: center;
+  }
+  #intro .carousel .first-carousel .btnBox {
+    text-align: center;
+  }
+  #intro .carousel .second-carousel {
+    margin-bottom: 50px;
+  }
+  #intro .carousel .second-carousel h2 {
+    font-size: 36px;
+  }
+  #intro .carousel .last-carousel {
+    margin-bottom: 50px;
+  }
+  #intro .carousel .last-carousel h2 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #intro .carousel .first-carousel {
+    margin-bottom: 20px;
+  }
+  #intro .carousel .first-carousel h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  #intro .carousel .first-carousel p {
+    text-align: center;
+  }
+  #intro .carousel .first-carousel .btnBox {
+    text-align: center;
+  }
+  #intro .carousel .second-carousel {
+    margin-bottom: 20px;
+  }
+  #intro .carousel .second-carousel h2 {
+    font-size: 30px;
+  }
+  #intro .carousel .last-carousel {
+    margin-bottom: 20px;
+  }
+  #intro .carousel .last-carousel h2 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 578px) {
