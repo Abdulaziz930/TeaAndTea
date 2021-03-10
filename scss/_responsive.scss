@@ -133,6 +133,21 @@
       margin-bottom: 20px;
     }
   }
+  #new-products {
+    .my-carousel {
+      .product-item {
+        .product-icon {
+          display: none;
+        }
+        .product-icon-hover {
+          display: none;
+        }
+        .btnBox {
+          display: none;
+        }
+      }
+    }
+  }
 }
 @media screen and(max-width:768px) {
   #intro {

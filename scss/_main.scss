@@ -70,7 +70,7 @@
     margin-bottom: 25px;
     text-align: center;
     h2 {
-      @include text(30px, 500, $text-color);
+      @include text(30px, 600, $text-color);
     }
   }
   .overlay-content {
@@ -116,7 +116,7 @@
   .section-heading {
     text-align: center;
     h2 {
-      @include text(30px, 500, $text-color);
+      @include text(30px, 600, $text-color);
     }
     p {
       margin-top: 20px;
@@ -162,6 +162,214 @@
             @include btnHover($primary-color);
           }
         }
+      }
+    }
+  }
+}
+#new-products {
+  .section-heading {
+    margin-top: 100px;
+    text-align: center;
+    h2 {
+      @include text(30px, 600, $text-color);
+    }
+  }
+  .linkBox {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -35px;
+    a {
+      text-decoration: underline;
+      text-underline-position: under;
+      @include text(12px, 400, $link-color);
+    }
+  }
+  .my-carousel {
+    padding-bottom: 30px;
+    .slick-next {
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f054";
+        @include text(45px, 600, $text-color);
+        padding-left: 30px;
+      }
+    }
+    .slick-prev {
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f053";
+        @include text(45px, 600, $text-color);
+        position: absolute;
+        left: -30px;
+      }
+    }
+    .product-item {
+      &:hover {
+        .product-icon-hover {
+          opacity: 1;
+        }
+        .btnBox {
+          transform: translateY(-25px);
+          opacity: 1;
+        }
+        .main-img {
+          display: none;
+        }
+        .hover-img {
+          display: block;
+        }
+      }
+      margin-left: 25px;
+      img {
+        cursor: pointer;
+      }
+      .hover-img {
+        display: none;
+      }
+      .product-title {
+        padding-top: 20px;
+        a {
+          @include text(12px, 600, $text-color);
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      .product-price {
+        span {
+          @include text(12px, 400, $secondary-color);
+          .old-money {
+            padding-right: 5px;
+            text-decoration: line-through;
+          }
+          .new-money {
+            padding-left: 5px;
+            color: $danger-color;
+          }
+        }
+      }
+      .product-color {
+        .colorBox {
+          padding-top: 15px;
+          display: flex;
+          .red {
+            @include colorBox($danger-color);
+          }
+          .beige {
+            @include colorBox(beige);
+          }
+          .white {
+            @include colorBox(white);
+          }
+          .darkseagreen {
+            @include colorBox(darkseagreen);
+          }
+          .mediumpurple {
+            @include colorBox(mediumpurple);
+          }
+          .pink {
+            @include colorBox(pink);
+          }
+          .grey {
+            @include colorBox(grey);
+          }
+        }
+      }
+      .product-icon {
+        background-color: $primary-color;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 230px;
+        padding: 4px 8px 2px;
+        font-size: 20px;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .product-icon-hover {
+        background-color: $primary-color;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+        padding: 4px 8px 2px;
+        font-size: 20px;
+        position: absolute;
+        top: 55px;
+        left: 228px;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      .btnBox {
+        position: absolute;
+        left: 38px;
+        bottom: 115px;
+        opacity: 0;
+        transition: all 0.5s;
+        .btn {
+          @include text(14px, 600, $primary-color);
+          @include btn(0 65px, $link-color, $link-color);
+          line-height: 42px;
+          &:hover {
+            @include btnHover($link-color);
+          }
+        }
+      }
+    }
+    .product-item-2 {
+      .product-icon {
+        left: 510px;
+      }
+      .product-icon-hover {
+        left: 510px;
+      }
+      .btnBox {
+        .btn {
+          padding: 0 50px;
+        }
+        left: 315px;
+      }
+    }
+    .product-item-3 {
+      .product-icon {
+        left: 785px;
+      }
+      .product-icon-hover {
+        left: 783px;
+      }
+      .btnBox {
+        .btn {
+          padding: 0 50px;
+        }
+        left: 595px;
+      }
+    }
+    .product-item-4 {
+      .product-icon {
+        left: 1060px;
+      }
+      .product-icon-hover {
+        left: 1058px;
+      }
+      .btnBox {
+        .btn {
+          padding: 0 50px;
+        }
+        left: 875px;
+      }
+    }
+    .product-item-5 {
+      .product-icon {
+        left: 1340px;
+      }
+      .product-icon-hover {
+        left: 1340px;
+      }
+      .btnBox {
+        .btn {
+          padding: 0 50px;
+        }
+        left: 1150px;
       }
     }
   }

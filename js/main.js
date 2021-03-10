@@ -56,6 +56,8 @@ barIcon.addEventListener("click", function () {
   }
 });
 
+let carousel = document.querySelectorAll(".owl-carousel");
+
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     items: 2,
@@ -71,5 +73,37 @@ $(document).ready(function () {
         items: 2,
       },
     },
+  });
+  $(".my-carousel").slick({
+    dots: true,
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 375,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 4,
+        },
+      },
+      {
+        breakpoint: 1100,
+        settings: {
+          arrows: false,
+          slidesToShow: 3,
+        },
+      },
+    ],
   });
 });
