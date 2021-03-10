@@ -374,3 +374,43 @@
     }
   }
 }
+#excellent-quality {
+  background-color: $bg-color;
+  margin-top: 115px;
+  .section-content {
+    height: 100%;
+    @include flexy-box();
+    .content-items {
+      h2 {
+        @include text(48px, 600, $link-color);
+        margin-bottom: 12px;
+      }
+      p {
+        @include text(14px, 400, $secondary-color);
+        margin-bottom: 35px;
+      }
+      .btnBox {
+        .btn {
+          @include text(14px, 600, $primary-color);
+          @include btn(0 50px, $link-color, $link-color);
+          line-height: 42px;
+          &:hover {
+            @include btnHover($link-color);
+          }
+        }
+      }
+    }
+  }
+  .section-img {
+    position: relative;
+    .video-icon-box {
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      font-size: 80px;
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+}

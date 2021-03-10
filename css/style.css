@@ -4,7 +4,6 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 3000px;
 }
 
 nav {
@@ -1455,6 +1454,65 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   padding: 0 50px;
 }
 
+#excellent-quality {
+  background-color: #fafafa;
+  margin-top: 115px;
+}
+
+#excellent-quality .section-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#excellent-quality .section-content .content-items h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #17a8a3;
+  margin-bottom: 12px;
+}
+
+#excellent-quality .section-content .content-items p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #787878;
+  margin-bottom: 35px;
+}
+
+#excellent-quality .section-content .content-items .btnBox .btn {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 0 50px;
+  background-color: #17a8a3;
+  border: 1px solid #17a8a3;
+  text-transform: uppercase;
+  border-radius: 0;
+  line-height: 42px;
+}
+
+#excellent-quality .section-content .content-items .btnBox .btn:hover {
+  background-color: #117b77;
+  border-color: #117b77;
+  color: #fff;
+}
+
+#excellent-quality .section-img {
+  position: relative;
+}
+
+#excellent-quality .section-img .video-icon-box {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  font-size: 80px;
+}
+
+#excellent-quality .section-img .video-icon-box a {
+  color: #fff;
+}
+
 @media screen and (max-width: 1024px) {
   nav .slide-item .iconBox {
     display: none;
@@ -1572,6 +1630,10 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   #new-products .my-carousel .product-item .btnBox {
     display: none;
   }
+  #excellent-quality .section-img .video-icon-box {
+    top: 43%;
+    left: 43%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1606,6 +1668,16 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   #new-arrivals .overlay-content {
     top: -580px;
     padding-left: 15px;
+  }
+  #excellent-quality .section-img {
+    height: 100%;
+  }
+  #excellent-quality .section-img img {
+    height: 100%;
+  }
+  #excellent-quality .section-img .video-icon-box {
+    top: 35%;
+    left: 40%;
   }
 }
 
@@ -1653,5 +1725,12 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   #new-arrivals .overlay-content {
     top: -300px;
     padding-left: 15px;
+  }
+  #excellent-quality .content-items {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #excellent-quality .section-img .video-icon-box {
+    top: 30%;
   }
 }

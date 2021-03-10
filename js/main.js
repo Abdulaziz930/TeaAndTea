@@ -9,6 +9,8 @@ let navbar = document.querySelector(".nav-bottom-item");
 let firstBadge = document.querySelector(".first-badge");
 let secondBadge = document.querySelector(".second-badge");
 let lastBadge = document.querySelector(".last-list-item");
+let productIconBox = document.querySelectorAll(".product-icon");
+let productIcon = document.querySelectorAll(".fa-heart");
 const nextIcon = '<i class="fas fa-chevron-right"></i>';
 const prevIcon = '<i class="fas fa-chevron-left"></i>';
 
@@ -56,7 +58,20 @@ barIcon.addEventListener("click", function () {
   }
 });
 
-let carousel = document.querySelectorAll(".owl-carousel");
+productIcon.forEach((item) => {
+  item.addEventListener("click", function (e) {
+    this.style.transition = "all 0.5s";
+    if (e.target.className === "far fa-heart active") {
+      e.target.classList.remove("active");
+      e.target.parentElement.style.backgroundColor = "#fff";
+      e.target.parentElement.style.color = "#000";
+    } else {
+      e.target.classList.add("active");
+      e.target.parentElement.style.backgroundColor = "#152d4b";
+      e.target.parentElement.style.color = "#fff";
+    }
+  });
+});
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
@@ -107,3 +122,5 @@ $(document).ready(function () {
     ],
   });
 });
+
+// #152d4b
