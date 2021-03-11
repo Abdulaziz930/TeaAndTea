@@ -63,6 +63,23 @@
     opacity: 0;
     transition: all 0.5s;
   }
+  .backToTop {
+    position: fixed;
+    border: 2px solid $text-color;
+    border-radius: 50%;
+    padding: 15px 28px;
+    right: 2%;
+    bottom: 15%;
+    font-size: 30px;
+    color: $text-color;
+    z-index: 3;
+    transition: all 0.5s;
+    opacity: 0;
+    cursor: pointer;
+    &:hover {
+      @include btnHover($primary-color);
+    }
+  }
 }
 #new-arrivals {
   .section-heading {
@@ -77,6 +94,7 @@
     position: relative;
     top: -440px;
     padding: 50px 20px 0 70px;
+    z-index: 2;
     h3 {
       @include text(20px, 600, $primary-color);
       margin-bottom: 20px;
@@ -92,6 +110,25 @@
         line-height: 42px;
         &:hover {
           @include btnHover($primary-color);
+        }
+      }
+    }
+  }
+  .owl-carousel {
+    .overlay {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 69.4%;
+        background-color: $text-color;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      &:hover {
+        &::before {
+          opacity: 0.4;
         }
       }
     }
@@ -138,6 +175,21 @@
     overflow-x: auto;
     display: flex;
     .imgBox {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $text-color;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      &:hover {
+        &::before {
+          opacity: 0.4;
+        }
+      }
       cursor: pointer;
       img {
         width: 100%;
@@ -405,7 +457,7 @@
     position: relative;
     .video-icon-box {
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 45%;
       font-size: 80px;
       a {

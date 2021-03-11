@@ -38,6 +38,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -682,7 +683,11 @@
               />
               <div class="carousel-caption first-carousel">
                 <div class="row">
-                  <div class="col-xl-5">
+                  <div
+                    class="col-xl-5"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
                     <h2>Teaware Collections from $80*</h2>
                     <p>
                       Destibulum laoreet an risus porta quisque hasellus blandit
@@ -772,6 +777,9 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+        <span class="backToTop">
+          <i class="fas fa-angle-double-up"></i>
+        </span>
       </section>
       <!-- Intro End -->
 
@@ -782,7 +790,7 @@
             <h2>New arrivals</h2>
           </div>
           <div class="owl-carousel">
-            <div>
+            <div class="overlay">
               <img
                 src="./assets/images/banner_1.jpg"
                 class="img-fluid"
@@ -796,7 +804,7 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div class="overlay">
               <img
                 src="./assets/images/banner_2.jpg"
                 class="img-fluid"
@@ -810,7 +818,7 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div class="overlay">
               <img
                 src="./assets/images/banner_1.jpg"
                 class="img-fluid"
@@ -904,16 +912,18 @@
           </div>
           <div class="my-carousel">
             <div class="product-item product-item-1">
-              <img
-                src="./assets/images/new-tea-1-hover.jpg"
-                alt="new-tea-photo"
-                class="img-fluid hover-img"
-              />
-              <img
-                src="./assets/images/new-tea-1.jpg"
-                class="img-fluid main-img"
-                alt="new-tea-photo"
-              />
+              <a href="product-detail.html">
+                <img
+                  src="./assets/images/new-tea-1-hover.jpg"
+                  alt="new-tea-photo"
+                  class="img-fluid hover-img"
+                />
+                <img
+                  src="./assets/images/new-tea-1.jpg"
+                  class="img-fluid main-img"
+                  alt="new-tea-photo"
+                />
+              </a>
               <div class="product-icon">
                 <i class="far fa-heart"></i>
               </div>
@@ -1440,6 +1450,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/main.js"></script>
     <!-- Scripts End -->
   </body>

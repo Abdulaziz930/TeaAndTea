@@ -13,9 +13,22 @@ let productIconBox = document.querySelectorAll(".product-icon");
 let mailInp = document.querySelector("input[type='email']");
 let productIcon = document.querySelectorAll(".fa-heart");
 let newsletterForm = document.querySelector(".newsletter-form");
+let backToTop = document.querySelector(".backToTop");
 let mailFormat = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const nextIcon = '<i class="fas fa-chevron-right"></i>';
 const prevIcon = '<i class="fas fa-chevron-left"></i>';
+
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset > "400") {
+    backToTop.style.opacity = "1";
+  } else {
+    backToTop.style.opacity = "0";
+  }
+});
+
+backToTop.addEventListener("click", function () {
+  window.scrollTo(0, 0);
+});
 
 window.addEventListener("scroll", function () {
   navbar.style.transition = "all 0.5s";
