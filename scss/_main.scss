@@ -414,3 +414,65 @@
     }
   }
 }
+#image-gallery {
+  margin-top: 100px;
+  .section-heading {
+    text-align: center;
+    h2 {
+      @include text(30px, 600, $text-color);
+      margin-bottom: 12px;
+    }
+    p {
+      @include text(14px, 400, $secondary-color);
+      margin-bottom: 35px;
+    }
+  }
+  .section-content {
+    display: flex;
+    a {
+      width: 25%;
+      position: relative;
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f00e";
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+        @include text(35px, 600, $primary-color);
+        opacity: 0;
+        transition: all 0.5s;
+        z-index: 2;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        width: 380px;
+        height: 380px;
+        background-color: $text-color;
+        left: 0;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      &:hover {
+        &::after {
+          opacity: 0.4;
+        }
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .btnBox {
+    margin-top: 55px;
+    text-align: center;
+    .btn {
+      @include text(14px, 600, $text-color);
+      @include btn(0 50px, $primary-color, $text-color);
+      line-height: 42px;
+      &:hover {
+        @include btnHover($primary-color);
+      }
+    }
+  }
+}
