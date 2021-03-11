@@ -1741,7 +1741,6 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
 
 #newsletter {
   margin-top: 85px;
-  margin-bottom: 1000px;
 }
 
 #newsletter .section-content {
@@ -1898,6 +1897,46 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   opacity: 1;
+}
+
+#shopify {
+  margin-top: 50px;
+}
+
+#shopify .section-content {
+  padding-left: 40px;
+}
+
+#shopify .section-content .contentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#shopify .section-content .contentBox .iconBox i {
+  font-size: 40px;
+}
+
+#shopify .section-content .contentBox .content {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding-left: 25px;
+}
+
+#shopify .section-content .contentBox .content h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+#shopify .section-content .contentBox .content p {
+  text-decoration: underline;
+  text-underline-position: under;
+  font-size: 12px;
+  font-weight: 400;
+  color: #787878;
 }
 
 @media screen and (max-width: 1024px) {

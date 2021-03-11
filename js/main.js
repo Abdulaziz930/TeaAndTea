@@ -162,5 +162,3 @@ $(document).ready(function () {
     ],
   });
 });
-
-// #152d4b

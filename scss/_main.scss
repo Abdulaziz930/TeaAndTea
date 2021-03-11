@@ -478,14 +478,12 @@
 }
 #newsletter {
   margin-top: 85px;
-  margin-bottom: 1000px;
   .section-content {
     background-image: url("../assets/images/bg_newsletter.webp");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 780px;
-    // background-size: cover;
     .section-heading {
       padding-top: 130px;
       h2 {
@@ -544,10 +542,30 @@
       }
     }
   }
-  // .section-content {
-  //   background-image: url("../assets/images/bg_newsletter.webp");
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  // }
+}
+#shopify {
+  margin-top: 50px;
+  .section-content {
+    padding-left: 40px;
+    .contentBox {
+      display: flex;
+      .iconBox {
+        i {
+          font-size: 40px;
+        }
+      }
+      .content {
+        user-select: none;
+        padding-left: 25px;
+        h3 {
+          @include text(14px, 600, $text-color);
+        }
+        p {
+          text-decoration: underline;
+          text-underline-position: under;
+          @include text(12px, 400, $secondary-color);
+        }
+      }
+    }
+  }
 }
