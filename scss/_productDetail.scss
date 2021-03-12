@@ -225,3 +225,28 @@
     }
   }
 }
+#product-policies {
+  margin-top: 50px;
+  .section-content {
+    user-select: none;
+    .contentBox {
+      text-align: center;
+      .iconBox {
+        @include flexy-box();
+        margin-bottom: 30px;
+      }
+      h3 {
+        @include text(18px, 500, $text-color);
+        margin-bottom: 25px;
+      }
+      p {
+        @include text(12px, 400, $secondary-color);
+        a {
+          color: $link-color;
+          text-decoration: underline;
+          text-underline-position: under;
+        }
+      }
+    }
+  }
+}
