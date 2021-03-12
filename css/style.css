@@ -557,12 +557,17 @@ nav .nav-bottom-item .right-side .right-list-items li {
   padding-left: 40px;
 }
 
-nav .nav-bottom-item .right-side .right-list-items li a {
+nav .nav-bottom-item .right-side .right-list-items li p {
+  cursor: pointer;
   font-size: 20px;
 }
 
-nav .nav-bottom-item .right-side .right-list-items li a .fa-times {
+nav .nav-bottom-item .right-side .right-list-items li p .fa-times {
   display: none;
+}
+
+nav .nav-bottom-item .right-side .right-list-items li a {
+  font-size: 20px;
 }
 
 nav .nav-bottom-item .right-side .right-list-items li .my-dropdown {
@@ -919,24 +924,15 @@ nav .nav-bottom-item .right-side .right-list-items li .my-dropdown .dropdown-con
   color: #17a8a3;
 }
 
-nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart {
+nav .nav-bottom-item .right-side .right-list-items .cart-quantity {
   position: relative;
-}
-
-nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
-  content: "0";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #dc3545;
+  top: -20%;
+  left: -25%;
   border-radius: 50%;
-  top: -10px;
-  right: -10px;
-  padding-top: 2px;
-  text-align: center;
+  background: #dc3545;
   color: #fff;
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
+  padding: 0px 7px;
+  text-align: center;
 }
 
 #intro .carousel {
@@ -1995,6 +1991,334 @@ nav .nav-bottom-item .right-side .right-list-items .fa-shopping-cart::after {
   font-size: 12px;
   font-weight: 400;
   color: #787878;
+}
+
+#product-detail {
+  margin-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#product-detail .section-img .small-img-box {
+  cursor: pointer;
+}
+
+#product-detail .section-img .small-img-box .second-small-img {
+  margin-top: 15px;
+}
+
+#product-detail .section-img .big-img-box {
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+#product-detail .section-img .big-img-box .second-big-img {
+  display: none;
+}
+
+#product-detail .custom-block {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#product-detail .custom-block h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+#product-detail .custom-block p {
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #787878;
+}
+
+#product-detail .section-content .product-title h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  line-height: 30px;
+}
+
+#product-detail .section-content .product-group {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#product-detail .section-content .product-group .stars {
+  cursor: pointer;
+}
+
+#product-detail .section-content .product-group .stars .fa-star {
+  color: #f3bc48;
+}
+
+#product-detail .section-content .product-group .review {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  color: #787878;
+  padding-left: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#product-detail .section-content .product-group .product-sold {
+  padding-left: 25px;
+  color: #dc3545;
+}
+
+#product-detail .section-content .product-group .product-sold .sold-content {
+  padding-left: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #dc3545;
+}
+
+#product-detail .section-content .product-detail label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  min-width: 120px;
+}
+
+#product-detail .section-content .product-detail span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #787878;
+}
+
+#product-detail .section-content .product-price {
+  margin-top: 20px;
+}
+
+#product-detail .section-content .product-price span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+
+#product-detail .section-content .product-description {
+  margin-top: 20px;
+}
+
+#product-detail .section-content .product-description p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #787878;
+}
+
+#product-detail .section-content .product-size {
+  margin-top: 25px;
+}
+
+#product-detail .section-content .product-size .size-label label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  padding-right: 5px;
+}
+
+#product-detail .section-content .product-size .size-label span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #787878;
+}
+
+#product-detail .section-content .product-size .size-content {
+  margin-top: 15px;
+}
+
+#product-detail .section-content .product-size .size-content span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#product-detail .section-content .error-msg {
+  margin-top: 25px;
+  display: none;
+}
+
+#product-detail .section-content .error-msg .erro-icon {
+  color: #dc3545;
+  font-size: 20px;
+}
+
+#product-detail .section-content .error-msg .error-content {
+  font-size: 12px;
+  font-weight: 400;
+  color: #787878;
+  font-style: italic;
+  margin-left: 10px;
+}
+
+#product-detail .section-content .product-quantity {
+  margin-top: 25px;
+}
+
+#product-detail .section-content .product-quantity label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+}
+
+#product-detail .section-content .product-quantity input {
+  width: 140px;
+  border: 1px solid #787878;
+  border-radius: 0;
+  color: #787878;
+}
+
+#product-detail .section-content .product-quantity input:focus {
+  outline: 0px;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#product-detail .section-content .sub-total span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #787878;
+}
+
+#product-detail .section-content .buttons {
+  margin-top: 15px;
+}
+
+#product-detail .section-content .buttons .firstBtnBox .btn-add-to-cart {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 0;
+  background-color: #17a8a3;
+  border: 1px solid #17a8a3;
+  text-transform: uppercase;
+  border-radius: 0;
+  width: 100%;
+  line-height: 42px;
+}
+
+#product-detail .section-content .buttons .firstBtnBox .btn-add-to-cart:hover {
+  background-color: #117b77;
+  border-color: #117b77;
+  color: #fff;
+}
+
+#product-detail .section-content .buttons .firstBtnBox .btn-remove-wishlist {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 0;
+  background-color: #dc3545;
+  border: 1px solid #dc3545;
+  text-transform: uppercase;
+  border-radius: 0;
+  width: 100%;
+  line-height: 42px;
+}
+
+#product-detail .section-content .buttons .firstBtnBox .btn-remove-wishlist .fa-heart {
+  padding-right: 10px;
+}
+
+#product-detail .section-content .buttons .secondBtnBox .btn-buy {
+  margin-top: 10px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #17a8a3;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #17a8a3;
+  text-transform: uppercase;
+  border-radius: 0;
+  width: 100%;
+  cursor: default;
+  pointer-events: none;
+  line-height: 42px;
+}
+
+#product-detail .section-content .buttons .secondBtnBox .btn-buy:hover {
+  background-color: #17a8a3;
+  border-color: #17a8a3;
+  color: #fff;
+}
+
+#product-detail .section-content .buttons .form-check {
+  margin-top: 10px;
+}
+
+#product-detail .section-content .buttons .form-check input {
+  cursor: pointer;
+}
+
+#product-detail .section-content .buttons .form-check label {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  color: #787878;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#product-detail .section-content .buttons .form-check label span {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+#product-detail .section-content .buttons .form-check label:hover {
+  color: #17a8a3;
+}
+
+#product-detail .section-content .buttons .form-check:hover label {
+  color: #17a8a3;
+}
+
+#product-detail .viewingBox {
+  margin-top: 15px;
+  width: 100%;
+  background-color: #fafafa;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#product-detail .viewingBox span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #787878;
+}
+
+#product-detail .shareBox {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#product-detail .shareBox .shareIcon {
+  padding-right: 15px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#product-detail .shareBox .shareIcon a {
+  color: #000;
+}
+
+#product-detail .shareBox .shareIcon:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 footer {

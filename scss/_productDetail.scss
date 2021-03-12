@@ -1,0 +1,227 @@
+#product-detail {
+  margin-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  .section-img {
+    .small-img-box {
+      cursor: pointer;
+      .second-small-img {
+        margin-top: 15px;
+      }
+    }
+    .big-img-box {
+      padding-left: 30px;
+      cursor: pointer;
+      .second-big-img {
+        display: none;
+      }
+    }
+  }
+  .custom-block {
+    margin-top: 20px;
+    text-align: center;
+    h3 {
+      @include text(16px, 500, $text-color);
+    }
+    p {
+      margin-top: 20px;
+      @include text(12px, 400, $secondary-color);
+    }
+  }
+  .section-content {
+    .product-title {
+      h1 {
+        @include text(24px, 600, $text-color);
+        line-height: 30px;
+      }
+    }
+    .product-group {
+      margin-top: 10px;
+      margin-bottom: 25px;
+      display: flex;
+      .stars {
+        cursor: pointer;
+        .fa-star {
+          color: $warning-color;
+        }
+      }
+      .review {
+        cursor: pointer;
+        @include text(12px, 400, $secondary-color);
+        padding-left: 10px;
+        align-self: center;
+      }
+      .product-sold {
+        padding-left: 25px;
+        color: $danger-color;
+        .sold-content {
+          padding-left: 5px;
+          @include text(12px, 400, $danger-color);
+        }
+      }
+    }
+    .product-detail {
+      label {
+        @include text(12px, 500, $text-color);
+        min-width: 120px;
+      }
+      span {
+        @include text(12px, 400, $secondary-color);
+      }
+    }
+    .product-price {
+      margin-top: 20px;
+      span {
+        @include text(18px, 400, $text-color);
+      }
+    }
+    .product-description {
+      margin-top: 20px;
+      p {
+        @include text(12px, 400, $secondary-color);
+      }
+    }
+    .product-size {
+      margin-top: 25px;
+      .size-label {
+        label {
+          @include text(12px, 500, $text-color);
+          padding-right: 5px;
+        }
+        span {
+          @include text(12px, 400, $secondary-color);
+        }
+      }
+      .size-content {
+        margin-top: 15px;
+        span {
+          @include text(14px, 400, $text-color);
+          border: 1px solid $text-color;
+          border-radius: 5px;
+          padding: 10px 15px;
+          cursor: pointer;
+        }
+      }
+    }
+    .error-msg {
+      margin-top: 25px;
+      display: none;
+      .erro-icon {
+        color: $danger-color;
+        font-size: 20px;
+      }
+      .error-content {
+        @include text(12px, 400, $secondary-color);
+        font-style: italic;
+        margin-left: 10px;
+      }
+    }
+    .product-quantity {
+      margin-top: 25px;
+      label {
+        @include text(12px, 500, $text-color);
+      }
+      input {
+        width: 140px;
+        border: 1px solid $secondary-color;
+        border-radius: 0;
+        color: $secondary-color;
+        &:focus {
+          outline: 0px;
+          -webkit-appearance: none;
+          box-shadow: none;
+        }
+      }
+    }
+    .sub-total {
+      span {
+        @include text(12px, 400, $secondary-color);
+      }
+    }
+    .buttons {
+      margin-top: 15px;
+      .firstBtnBox {
+        .btn-add-to-cart {
+          @include text(14px, 600, $primary-color);
+          @include btn(0, $link-color, $link-color);
+          width: 100%;
+          line-height: 42px;
+          &:hover {
+            @include btnHover($link-color);
+          }
+        }
+        .btn-remove-wishlist {
+          @include text(14px, 600, $primary-color);
+          @include btn(0, $danger-color, $danger-color);
+          width: 100%;
+          line-height: 42px;
+          .fa-heart {
+            padding-right: 10px;
+          }
+        }
+      }
+      .secondBtnBox {
+        .btn-buy {
+          margin-top: 10px;
+          padding: 0;
+          @include text(14px, 600, $link-color);
+          @include btn(0, $primary-color, $link-color);
+          width: 100%;
+          cursor: default;
+          pointer-events: none;
+          line-height: 42px;
+          &:hover {
+            @include btnHover($primary-color);
+          }
+        }
+      }
+      .form-check {
+        margin-top: 10px;
+        input {
+          cursor: pointer;
+        }
+        label {
+          cursor: pointer;
+          @include text(14px, 400, $secondary-color);
+          transition: all 0.5s;
+          span {
+            text-decoration: underline;
+            text-underline-position: under;
+          }
+          &:hover {
+            color: $link-color;
+          }
+        }
+        &:hover {
+          label {
+            color: $link-color;
+          }
+        }
+      }
+    }
+  }
+  .viewingBox {
+    margin-top: 15px;
+    width: 100%;
+    background-color: $bg-color;
+    text-align: center;
+    padding: 10px 0;
+    span {
+      @include text(12px, 400, $secondary-color);
+    }
+  }
+  .shareBox {
+    margin-top: 15px;
+    display: flex;
+    .shareIcon {
+      padding-right: 15px;
+      transition: all 0.5s;
+      a {
+        color: $text-color;
+      }
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}

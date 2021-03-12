@@ -378,10 +378,14 @@ nav {
         padding-left: 10px;
         li {
           padding-left: 40px;
-          a {
+          p {
+            cursor: pointer;
             .fa-times {
               display: none;
             }
+            font-size: 20px;
+          }
+          a {
             font-size: 20px;
           }
           .my-dropdown {
@@ -512,23 +516,15 @@ nav {
             }
           }
         }
-        .fa-shopping-cart {
+        .cart-quantity {
           position: relative;
-          &::after {
-            content: "0";
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: $danger-color;
-            border-radius: 50%;
-            top: -10px;
-            right: -10px;
-            padding-top: 2px;
-            text-align: center;
-            color: $primary-color;
-            font-size: 17px;
-            font-family: "Poppins", sans-serif;
-          }
+          top: -20%;
+          left: -25%;
+          border-radius: 50%;
+          background: $danger-color;
+          color: $primary-color;
+          padding: 0px 7px;
+          text-align: center;
         }
       }
     }
