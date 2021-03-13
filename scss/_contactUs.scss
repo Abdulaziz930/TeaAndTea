@@ -1,0 +1,75 @@
+.contact-content {
+  margin-top: 60px;
+  padding: 0 30px;
+  h1 {
+    @include text(30px, 600, $text-color);
+  }
+  .contentBox {
+    .formBox {
+      padding-right: 15px;
+      .invalid-feedback {
+        margin-bottom: 10px;
+      }
+      p {
+        @include text(14px, 400, $secondary-color);
+        a {
+          @include text(14px, 400, $link-color);
+          text-decoration: underline;
+          text-underline-position: under;
+        }
+      }
+      form {
+        label {
+          cursor: pointer;
+        }
+        input {
+          border: 1px solid $secondary-color;
+          border-radius: 0;
+          &:focus {
+            outline: 0px;
+            -webkit-appearance: none;
+            box-shadow: none;
+          }
+        }
+        textarea {
+          border: 1px solid $secondary-color;
+          border-radius: 0;
+          &:focus {
+            outline: 0px;
+            -webkit-appearance: none;
+            box-shadow: none;
+          }
+        }
+        .btn-submit {
+          @include text(14px, 600, $primary-color);
+          @include btn(0 50px, $link-color, $link-color);
+          line-height: 42px;
+          &:hover {
+            @include btnHover($link-color);
+          }
+        }
+      }
+    }
+    .addressBox {
+      padding-left: 15px;
+      h3 {
+        @include text(18px, 600, $text-color);
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid $secondary-color;
+      }
+      p {
+        @include text(14px, 400, $secondary-color);
+      }
+      .btn {
+        @include text(14px, 600, $text-color);
+        @include btn(0 50px, $primary-color, $text-color);
+        line-height: 42px;
+        margin: 30px 0;
+        &:hover {
+          @include btnHover($primary-color);
+        }
+      }
+    }
+  }
+}

@@ -3456,6 +3456,123 @@ nav .nav-bottom-item .right-side .right-list-items .cart-quantity {
   text-underline-position: under;
 }
 
+.contact-content {
+  margin-top: 60px;
+  padding: 0 30px;
+}
+
+.contact-content h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+}
+
+.contact-content .contentBox .formBox {
+  padding-right: 15px;
+}
+
+.contact-content .contentBox .formBox .invalid-feedback {
+  margin-bottom: 10px;
+}
+
+.contact-content .contentBox .formBox p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #787878;
+}
+
+.contact-content .contentBox .formBox p a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #17a8a3;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.contact-content .contentBox .formBox form label {
+  cursor: pointer;
+}
+
+.contact-content .contentBox .formBox form input {
+  border: 1px solid #787878;
+  border-radius: 0;
+}
+
+.contact-content .contentBox .formBox form input:focus {
+  outline: 0px;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact-content .contentBox .formBox form textarea {
+  border: 1px solid #787878;
+  border-radius: 0;
+}
+
+.contact-content .contentBox .formBox form textarea:focus {
+  outline: 0px;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact-content .contentBox .formBox form .btn-submit {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 0 50px;
+  background-color: #17a8a3;
+  border: 1px solid #17a8a3;
+  text-transform: uppercase;
+  border-radius: 0;
+  line-height: 42px;
+}
+
+.contact-content .contentBox .formBox form .btn-submit:hover {
+  background-color: #117b77;
+  border-color: #117b77;
+  color: #fff;
+}
+
+.contact-content .contentBox .addressBox {
+  padding-left: 15px;
+}
+
+.contact-content .contentBox .addressBox h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #787878;
+}
+
+.contact-content .contentBox .addressBox p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #787878;
+}
+
+.contact-content .contentBox .addressBox .btn {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  padding: 0 50px;
+  background-color: #fff;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  border-radius: 0;
+  line-height: 42px;
+  margin: 30px 0;
+}
+
+.contact-content .contentBox .addressBox .btn:hover {
+  background-color: #17a8a3;
+  border-color: #17a8a3;
+  color: #fff;
+}
+
 footer {
   margin-top: 30px;
 }
@@ -3897,6 +4014,9 @@ footer .copyright .cr-links a .fa-cc-paypal {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .contact-content .contentBox .formBox form .btn-submit {
+    margin-bottom: 55px;
   }
   footer .footer-content .footer-list ul {
     padding-left: 0;
