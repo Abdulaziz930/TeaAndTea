@@ -482,3 +482,37 @@
     }
   }
 }
+#custom-block {
+  margin-top: 30px;
+  position: relative;
+  .section-img {
+    img {
+      width: 100%;
+      object-fit: cover;
+      max-height: 700px;
+    }
+  }
+  .section-content {
+    width: 25%;
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    .sub-title {
+      @include text(14px, 400, $primary-color);
+      margin-bottom: 15px;
+    }
+    .title {
+      @include text(25px, 500, $primary-color);
+      margin-bottom: 30px;
+    }
+    p {
+      @include text(12px, 400, $primary-color);
+    }
+  }
+  .section-description {
+    margin: 70px 60px;
+    p {
+      @include text(12px, 400, $secondary-color);
+    }
+  }
+}

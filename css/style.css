@@ -2804,6 +2804,55 @@ nav .nav-bottom-item .right-side .right-list-items .cart-quantity {
   background-color: #fafafa;
 }
 
+#custom-block {
+  margin-top: 30px;
+  position: relative;
+}
+
+#custom-block .section-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 700px;
+}
+
+#custom-block .section-content {
+  width: 25%;
+  position: absolute;
+  top: 35%;
+  left: 3%;
+}
+
+#custom-block .section-content .sub-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+#custom-block .section-content .title {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+#custom-block .section-content p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+
+#custom-block .section-description {
+  margin: 70px 60px;
+}
+
+#custom-block .section-description p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #787878;
+}
+
 footer {
   margin-top: 30px;
 }
