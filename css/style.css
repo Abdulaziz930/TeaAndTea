@@ -3007,6 +3007,455 @@ nav .nav-bottom-item .right-side .right-list-items .cart-quantity {
   color: #fff;
 }
 
+.blogContentBox {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.blogContentBox .section-heading {
+  margin-top: 75px;
+}
+
+.blogContentBox .section-heading h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+}
+
+.blogContentBox form .form-group {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #787878;
+}
+
+.blogContentBox form .form-group label {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.blogContentBox form .form-group input {
+  position: relative;
+  border-radius: 0;
+  border-color: #787878;
+  color: #787878;
+  font-size: 12px;
+}
+
+.blogContentBox form .form-group input:focus {
+  outline: 0px;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.blogContentBox form .form-group input:focus::-webkit-input-placeholder {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  opacity: 0;
+}
+
+.blogContentBox form .form-group input:focus:-ms-input-placeholder {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+.blogContentBox form .form-group input:focus::-ms-input-placeholder {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+.blogContentBox form .form-group input:focus::placeholder {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  opacity: 0;
+}
+
+.blogContentBox form .form-group .blur::-webkit-input-placeholder {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.blogContentBox form .form-group .blur:-ms-input-placeholder {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.blogContentBox form .form-group .blur::-ms-input-placeholder {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.blogContentBox form .form-group .blur::placeholder {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.blogContentBox .blog-categories {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #787878;
+}
+
+.blogContentBox .blog-categories h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.blogContentBox .blog-categories ul {
+  margin-top: 20px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.blogContentBox .blog-categories ul li {
+  margin-bottom: 5px;
+}
+
+.blogContentBox .blog-categories ul li .list-link {
+  font-size: 14px;
+  font-weight: 400;
+  color: #787878;
+}
+
+.blogContentBox .blog-categories ul li .list-link:hover {
+  text-decoration: none;
+}
+
+.blogContentBox .recent-posts {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #787878;
+}
+
+.blogContentBox .recent-posts h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.blogContentBox .recent-posts .contentBox {
+  margin-top: 20px;
+}
+
+.blogContentBox .recent-posts .contentBox .content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogContentBox .recent-posts .contentBox .content-box .imgBox {
+  margin-bottom: 10px;
+}
+
+.blogContentBox .recent-posts .contentBox .content-box .imgBox img {
+  border-radius: 7px;
+  width: 85px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogContentBox .recent-posts .contentBox .content-box .content {
+  padding-left: 10px;
+}
+
+.blogContentBox .recent-posts .contentBox .content-box .content h5 a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.blogContentBox .recent-posts .contentBox .content-box .content h5 a:hover {
+  text-decoration: none;
+}
+
+.blogContentBox .recent-posts .contentBox .content-box .content span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #787878;
+  font-style: italic;
+}
+
+.blogContentBox .best-sellers {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #787878;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content {
+  padding-left: 10px;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content a {
+  font-size: 12px;
+  font-weight: 500;
+  color: #17a8a3;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content a:hover {
+  text-decoration: none;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #787878;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content span .old-money {
+  padding-right: 5px;
+  text-decoration: line-through;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content span .new-money {
+  padding-left: 5px;
+  color: #dc3545;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content .colorBox {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content .colorBox .red {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #787878;
+  font-size: 0;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content .colorBox .red::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #dc3545;
+  border-radius: 50%;
+  top: 1.5px;
+  left: 1.5px;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content .colorBox .beige {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #787878;
+  font-size: 0;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content .colorBox .beige::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: beige;
+  border-radius: 50%;
+  top: 1.5px;
+  left: 1.5px;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content .colorBox .white {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #787878;
+  font-size: 0;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content .colorBox .white::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  top: 1.5px;
+  left: 1.5px;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content .colorBox .darkseagreen {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #787878;
+  font-size: 0;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content .colorBox .darkseagreen::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: darkseagreen;
+  border-radius: 50%;
+  top: 1.5px;
+  left: 1.5px;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content .colorBox .mediumpurple {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #787878;
+  font-size: 0;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content .colorBox .mediumpurple::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: mediumpurple;
+  border-radius: 50%;
+  top: 1.5px;
+  left: 1.5px;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content .colorBox .pink {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #787878;
+  font-size: 0;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content .colorBox .pink::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: pink;
+  border-radius: 50%;
+  top: 1.5px;
+  left: 1.5px;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content .colorBox .grey {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #787878;
+  font-size: 0;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.blogContentBox .best-sellers .product-boxes .contentBox .content .colorBox .grey::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: grey;
+  border-radius: 50%;
+  top: 1.5px;
+  left: 1.5px;
+}
+
+.blogContentBox .blog-content .contentBox {
+  margin-top: 30px;
+}
+
+.blogContentBox .blog-content .contentBox span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #787878;
+  padding: 0 10px;
+}
+
+.blogContentBox .blog-content .contentBox span:not(:first-child) {
+  border-left: 1px solid #787878;
+}
+
+.blogContentBox .blog-content .contentBox h3 {
+  margin-top: 10px;
+}
+
+.blogContentBox .blog-content .contentBox h3 a {
+  font-size: 25px;
+  font-weight: 600;
+  color: #000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.blogContentBox .blog-content .contentBox h3 a:hover {
+  color: #17a8a3;
+  text-decoration: none;
+}
+
+.blogContentBox .blog-content .contentBox p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #787878;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.blogContentBox .blog-content .contentBox p a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #17a8a3;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
 footer {
   margin-top: 30px;
 }
@@ -3363,6 +3812,9 @@ footer .copyright .cr-links a .fa-cc-paypal {
   }
   #tea-collection .section-content .imgBox:not(:last-child) {
     width: auto;
+  }
+  .reklamBox {
+    display: none;
   }
 }
 

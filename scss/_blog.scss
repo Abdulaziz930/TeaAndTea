@@ -1,0 +1,198 @@
+.blogContentBox {
+  padding-left: 40px;
+  padding-right: 40px;
+  .section-heading {
+    margin-top: 75px;
+    h1 {
+      @include text(30px, 600, $text-color);
+    }
+  }
+  form {
+    .form-group {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid $secondary-color;
+      label {
+        @include text(20px, 600, $text-color);
+        line-height: 20px;
+        margin-bottom: 25px;
+      }
+      input {
+        position: relative;
+        border-radius: 0;
+        border-color: $secondary-color;
+        color: $secondary-color;
+        font-size: 12px;
+        &:focus {
+          outline: 0px;
+          -webkit-appearance: none;
+          box-shadow: none;
+          &::placeholder {
+            transition: all 0.5s;
+            transform: translateX(50px);
+            opacity: 0;
+          }
+        }
+      }
+      .blur {
+        &::placeholder {
+          transition: all 0.5s;
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .blog-categories {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $secondary-color;
+    h3 {
+      @include text(20px, 600, $text-color);
+    }
+    ul {
+      margin-top: 20px;
+      list-style-type: none;
+      padding-left: 0;
+      li {
+        margin-bottom: 5px;
+        .list-link {
+          @include text(14px, 400, $secondary-color);
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .recent-posts {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $secondary-color;
+    h3 {
+      @include text(20px, 600, $text-color);
+    }
+    .contentBox {
+      margin-top: 20px;
+      .content-box {
+        display: flex;
+        .imgBox {
+          margin-bottom: 10px;
+          img {
+            border-radius: 7px;
+            width: 85px;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .content {
+          padding-left: 10px;
+          h5 {
+            a {
+              @include text(14px, 500, $text-color);
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+          span {
+            @include text(12px, 400, $secondary-color);
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+  .best-sellers {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $secondary-color;
+    .product-boxes {
+      .contentBox {
+        margin-top: 20px;
+        display: flex;
+        .content {
+          padding-left: 10px;
+          h5 {
+            @include text(14px, 500, $text-color);
+          }
+          a {
+            @include text(12px, 500, $link-color);
+            &:hover {
+              text-decoration: none;
+            }
+          }
+          span {
+            @include text(12px, 400, $secondary-color);
+            .old-money {
+              padding-right: 5px;
+              text-decoration: line-through;
+            }
+            .new-money {
+              padding-left: 5px;
+              color: $danger-color;
+            }
+          }
+          .colorBox {
+            padding-top: 15px;
+            display: flex;
+            .red {
+              @include colorBox($danger-color);
+            }
+            .beige {
+              @include colorBox(beige);
+            }
+            .white {
+              @include colorBox(white);
+            }
+            .darkseagreen {
+              @include colorBox(darkseagreen);
+            }
+            .mediumpurple {
+              @include colorBox(mediumpurple);
+            }
+            .pink {
+              @include colorBox(pink);
+            }
+            .grey {
+              @include colorBox(grey);
+            }
+          }
+        }
+      }
+    }
+  }
+  .blog-content {
+    .contentBox {
+      margin-top: 30px;
+      span {
+        @include text(12px, 400, $secondary-color);
+        padding: 0 10px;
+        &:not(:first-child) {
+          border-left: 1px solid $secondary-color;
+        }
+      }
+      h3 {
+        margin-top: 10px;
+        a {
+          @include text(25px, 600, $text-color);
+          transition: all 0.5s;
+          &:hover {
+            color: $link-color;
+            text-decoration: none;
+          }
+        }
+      }
+      p {
+        @include text(14px, 400, $secondary-color);
+        margin-top: 10px;
+        margin-bottom: 20px;
+        a {
+          @include text(14px, 600, $link-color);
+          text-decoration: underline;
+          text-underline-position: under;
+        }
+      }
+    }
+  }
+}
