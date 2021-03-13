@@ -34,23 +34,6 @@ let writeReview = document.querySelector(".content-action");
 let reviewContent = document.querySelector("#review-body");
 let customerContent = document.querySelector("#customer-content");
 let detailListItem = document.querySelectorAll(".detail-list-item");
-// let productIconBox = document.querySelectorAll(".product-icon");
-// let mailInp = document.querySelector("input[type='email']");
-// let productIcon = document.querySelectorAll(".fa-heart");
-// let newsletterForm = document.querySelector(".newsletter-form");
-// let backToTop = document.querySelector(".backToTop");
-
-// window.addEventListener("scroll", function () {
-//   if (window.pageYOffset > "400") {
-//     backToTop.style.opacity = "1";
-//   } else {
-//     backToTop.style.opacity = "0";
-//   }
-// });
-
-// backToTop.addEventListener("click", function () {
-//   window.scrollTo(0, 0);
-// });
 
 $(document).ready(function () {
   $("#big-img").zoom();

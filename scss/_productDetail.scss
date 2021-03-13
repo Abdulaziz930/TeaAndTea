@@ -541,6 +541,9 @@
           left: 0;
         }
       }
+      img {
+        width: 100%;
+      }
     }
     .contentBox {
       height: 100%;
@@ -601,6 +604,7 @@
       margin-top: 70px;
     }
     .content-3 {
+      margin-top: 70px;
       .section-img {
         position: relative;
         .video-icon-box {
