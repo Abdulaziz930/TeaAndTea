@@ -1,0 +1,54 @@
+.createAccountBox {
+  padding: 0 30px;
+  margin-top: 55px;
+  .account-heading {
+    h1 {
+      @include text(30px, 600, $text-color);
+    }
+  }
+  .create-account-content {
+    margin-top: 75px;
+    .form-heading {
+      h3 {
+        @include text(18px, 600, $text-color);
+      }
+    }
+    .form-description {
+      margin-top: 15px;
+      margin-bottom: 40px;
+      p {
+        @include text(14px, 400, $secondary-color);
+      }
+    }
+    form {
+      label {
+        @include text(14px, 500, $text-color);
+        cursor: pointer;
+      }
+      input {
+        border: 1px solid $secondary-color;
+        border-radius: 0;
+        &:focus {
+          outline: 0px;
+          -webkit-appearance: none;
+          box-shadow: none;
+        }
+      }
+      .btn {
+        @include text(14px, 600, $primary-color);
+        @include btn(0 50px, $link-color, $link-color);
+        line-height: 42px;
+        &:hover {
+          @include btnHover($link-color);
+        }
+      }
+      .invalid-feedback {
+        margin-bottom: 10px;
+      }
+    }
+    .registerForm {
+      background-color: $bg-color;
+      padding: 30px;
+    }
+  }
+}

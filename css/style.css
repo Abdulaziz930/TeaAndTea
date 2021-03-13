@@ -3573,6 +3573,84 @@ nav .nav-bottom-item .right-side .right-list-items .cart-quantity {
   color: #fff;
 }
 
+.createAccountBox {
+  padding: 0 30px;
+  margin-top: 55px;
+}
+
+.createAccountBox .account-heading h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+}
+
+.createAccountBox .create-account-content {
+  margin-top: 75px;
+}
+
+.createAccountBox .create-account-content .form-heading h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.createAccountBox .create-account-content .form-description {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.createAccountBox .create-account-content .form-description p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #787878;
+}
+
+.createAccountBox .create-account-content form label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+}
+
+.createAccountBox .create-account-content form input {
+  border: 1px solid #787878;
+  border-radius: 0;
+}
+
+.createAccountBox .create-account-content form input:focus {
+  outline: 0px;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.createAccountBox .create-account-content form .btn {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 0 50px;
+  background-color: #17a8a3;
+  border: 1px solid #17a8a3;
+  text-transform: uppercase;
+  border-radius: 0;
+  line-height: 42px;
+}
+
+.createAccountBox .create-account-content form .btn:hover {
+  background-color: #117b77;
+  border-color: #117b77;
+  color: #fff;
+}
+
+.createAccountBox .create-account-content form .invalid-feedback {
+  margin-bottom: 10px;
+}
+
+.createAccountBox .create-account-content .registerForm {
+  background-color: #fafafa;
+  padding: 30px;
+}
+
 footer {
   margin-top: 30px;
 }
@@ -4016,6 +4094,9 @@ footer .copyright .cr-links a .fa-cc-paypal {
     display: flex;
   }
   .contact-content .contentBox .formBox form .btn-submit {
+    margin-bottom: 55px;
+  }
+  .createAccountBox .create-account-content form .btn {
     margin-bottom: 55px;
   }
   footer .footer-content .footer-list ul {
