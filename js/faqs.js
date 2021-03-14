@@ -1,0 +1,82 @@
+let searchBtn = document.querySelector(".searchBtn");
+let closeBtn = document.querySelector(".fa-times");
+let searchLink = document.querySelector(".search-link");
+let searchDropDown = document.querySelector(".right-dropdown");
+let inputs = document.querySelectorAll("input");
+let barIcon = document.querySelector(".fa-bars");
+let hamburgerMenu = document.querySelector(".left-side");
+let navbar = document.querySelector(".nav-bottom-item");
+let firstBadge = document.querySelector(".first-badge");
+let secondBadge = document.querySelector(".second-badge");
+let lastBadge = document.querySelector(".last-list-item");
+let questionBody = document.querySelectorAll(".questions-body");
+let toggle = document.querySelectorAll(".question-toggle");
+let plusIcon = document.querySelectorAll(".plus-icon");
+
+window.addEventListener("scroll", function () {
+  navbar.style.transition = "all 0.5s";
+  if (window.pageYOffset > "100") {
+    navbar.style.position = "fixed";
+    navbar.style.width = "100%";
+    navbar.style.top = "0";
+    firstBadge.classList.add("first-badge-1");
+    secondBadge.classList.add("second-badge-1");
+    lastBadge.classList.add("last-list-item-1");
+  } else {
+    navbar.style.position = "";
+    firstBadge.classList.remove("first-badge-1");
+    secondBadge.classList.remove("second-badge-1");
+    lastBadge.classList.remove("last-list-item-1");
+  }
+});
+
+searchLink.addEventListener("click", function () {
+  if (searchBtn.style.display === "none") {
+    searchBtn.style.display = "inline-block";
+    closeBtn.style.display = "none";
+    searchDropDown.style.display = "none";
+  } else {
+    searchBtn.style.display = "none";
+    closeBtn.style.display = "inline-block";
+    searchDropDown.style.display = "block";
+  }
+});
+
+inputs.forEach((item) => {
+  item.addEventListener("blur", function () {
+    item.classList.add("blur");
+  });
+});
+
+barIcon.addEventListener("click", function () {
+  hamburgerMenu.style.transition = "all 0.5s";
+  if (hamburgerMenu.classList.contains("active")) {
+    hamburgerMenu.classList.remove("active");
+    hamburgerMenu.style.display = "none";
+  } else {
+    hamburgerMenu.classList.add("active");
+    hamburgerMenu.style.display = "block";
+  }
+});
+
+questionBody.forEach((item) => {
+  item.addEventListener("click", function () {
+    let id = this.dataset.target;
+    let targetText = document.getElementById(id);
+    if (targetText.className !== "question-toggle active") {
+      let targetText = document.getElementById(id);
+      targetText.className += " active";
+      let linkId = this.dataset.targetLink;
+      let targetLink = document.getElementById(linkId);
+      if (targetLink.className !== "plus-icon change-plus") {
+        let targetLink = document.getElementById(linkId);
+        targetLink.className += " change-plus";
+      }
+    } else {
+      let linkId = this.dataset.targetLink;
+      let targetLink = document.getElementById(linkId);
+      targetText.className = "question-toggle";
+      targetLink.className = "plus-icon";
+    }
+  });
+});

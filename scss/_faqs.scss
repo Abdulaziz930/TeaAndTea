@@ -1,0 +1,123 @@
+.faqsContentBox {
+  padding: 0 30px;
+  margin-top: 50px;
+  .faqs-heading {
+    h1 {
+      @include text(30px, 600, $text-color);
+    }
+  }
+  .faqs-description {
+    p {
+      @include text(14px, 400, $secondary-color);
+      a {
+        @include text(14px, 400, $link-color);
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+    }
+  }
+  .faqs-body {
+    margin-top: 50px;
+    .helpBox {
+      background-color: $bg-color;
+      padding: 30px;
+      text-align: center;
+      .box-title {
+        padding-bottom: 10px;
+        border-bottom: 2px solid $text-color;
+        h3 {
+          @include text(18px, 600, $text-color);
+        }
+      }
+      .box-links {
+        margin-top: 20px;
+        display: flex;
+        .box-link {
+          .social-icon {
+            i {
+              font-size: 25px;
+            }
+          }
+          a {
+            @include text(14px, 400, $link-color);
+            text-decoration: underline;
+            text-underline-position: under;
+          }
+        }
+      }
+    }
+    .questionsBox {
+      margin-top: 30px;
+      .questions-content {
+        .questions-heading {
+          padding-bottom: 10px;
+          border-bottom: 2px solid $text-color;
+          h3 {
+            @include text(18px, 600, $text-color);
+          }
+        }
+        .questions-second-heading{
+          margin-top: 50px;
+        }
+        .questions-body-box {
+          border-bottom: 1px solid $secondary-color;
+          .questions-body {
+            padding: 30px 0 0;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            .content-text {
+              p {
+                @include text(14px, 400, $text-color);
+              }
+            }
+            .content-icon {
+              span {
+                position: relative;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  width: 20px;
+                  height: 1.5px;
+                  background-color: $secondary-color;
+                  right: 0;
+                  top: 11px;
+                }
+                &::after {
+                  content: "";
+                  position: absolute;
+                  width: 20px;
+                  height: 1.5px;
+                  background-color: $secondary-color;
+                  right: 0;
+                  top: 11px;
+                  transform: rotate(270deg);
+                  transition: all 0.5s;
+                }
+              }
+              .change-plus {
+                &::after {
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
+          .question-toggle {
+            display: none;
+            p {
+              @include text(14px, 400, $secondary-color);
+            }
+            a{
+              @include text(14px,400,$link-color);
+              text-decoration: underline;
+              text-underline-position: under;
+            }
+          }
+          .active{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

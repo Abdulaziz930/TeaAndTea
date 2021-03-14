@@ -3651,6 +3651,166 @@ nav .nav-bottom-item .right-side .right-list-items .cart-quantity {
   padding: 30px;
 }
 
+.faqsContentBox {
+  padding: 0 30px;
+  margin-top: 50px;
+}
+
+.faqsContentBox .faqs-heading h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+}
+
+.faqsContentBox .faqs-description p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #787878;
+}
+
+.faqsContentBox .faqs-description p a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #17a8a3;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.faqsContentBox .faqs-body {
+  margin-top: 50px;
+}
+
+.faqsContentBox .faqs-body .helpBox {
+  background-color: #fafafa;
+  padding: 30px;
+  text-align: center;
+}
+
+.faqsContentBox .faqs-body .helpBox .box-title {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000;
+}
+
+.faqsContentBox .faqs-body .helpBox .box-title h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.faqsContentBox .faqs-body .helpBox .box-links {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.faqsContentBox .faqs-body .helpBox .box-links .box-link .social-icon i {
+  font-size: 25px;
+}
+
+.faqsContentBox .faqs-body .helpBox .box-links .box-link a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #17a8a3;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.faqsContentBox .faqs-body .questionsBox {
+  margin-top: 30px;
+}
+
+.faqsContentBox .faqs-body .questionsBox .questions-content .questions-heading {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000;
+}
+
+.faqsContentBox .faqs-body .questionsBox .questions-content .questions-heading h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.faqsContentBox .faqs-body .questionsBox .questions-content .questions-second-heading {
+  margin-top: 50px;
+}
+
+.faqsContentBox .faqs-body .questionsBox .questions-content .questions-body-box {
+  border-bottom: 1px solid #787878;
+}
+
+.faqsContentBox .faqs-body .questionsBox .questions-content .questions-body-box .questions-body {
+  padding: 30px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.faqsContentBox .faqs-body .questionsBox .questions-content .questions-body-box .questions-body .content-text p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+
+.faqsContentBox .faqs-body .questionsBox .questions-content .questions-body-box .questions-body .content-icon span {
+  position: relative;
+}
+
+.faqsContentBox .faqs-body .questionsBox .questions-content .questions-body-box .questions-body .content-icon span::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 1.5px;
+  background-color: #787878;
+  right: 0;
+  top: 11px;
+}
+
+.faqsContentBox .faqs-body .questionsBox .questions-content .questions-body-box .questions-body .content-icon span::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 1.5px;
+  background-color: #787878;
+  right: 0;
+  top: 11px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.faqsContentBox .faqs-body .questionsBox .questions-content .questions-body-box .questions-body .content-icon .change-plus::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faqsContentBox .faqs-body .questionsBox .questions-content .questions-body-box .question-toggle {
+  display: none;
+}
+
+.faqsContentBox .faqs-body .questionsBox .questions-content .questions-body-box .question-toggle p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #787878;
+}
+
+.faqsContentBox .faqs-body .questionsBox .questions-content .questions-body-box .question-toggle a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #17a8a3;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.faqsContentBox .faqs-body .questionsBox .questions-content .questions-body-box .active {
+  display: block;
+}
+
 footer {
   margin-top: 30px;
 }
@@ -3941,6 +4101,9 @@ footer .copyright .cr-links a .fa-cc-paypal {
   }
   #tea-collection .section-content .content-3 .section-img .video-icon-box {
     left: 42%;
+  }
+  .faqsContentBox .faqs-body .helpBox {
+    padding: 10px;
   }
 }
 
